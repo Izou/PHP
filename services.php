@@ -41,7 +41,7 @@
  			<img src="<?php echo $services[$page-1][1]; ?>">
  			</figure>
 
- 			<p><?php echo $services[$page-1][2]; ?></p>
+ 			<p class='right'><?php echo $services[$page-1][2]; ?></p>
  		</article>
  	</section>
 

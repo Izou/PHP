@@ -103,6 +103,12 @@ h2{
 
 img{
 	border-radius:100px 100px 100px 100px;
+	float: left;
+}
+
+p.right{
+	float: left;
+	padding-left: 2em;
 }
 
 footer{
