@@ -1,4 +1,8 @@
 <?php
+ 	$location=$_SERVER['PHP_SELF'];
+ 	$search=substr($location,22);
+ 	echo $search;
+
  	include "init_inc.php";
  	$titre='Services';
  	$rajoutB="class='active'";
@@ -46,3 +50,13 @@
  	</section>
 
  	 <?php include "footer_inc.php"; ?>
+
+<!-- Correction
+$cle=0;
+if(isset($_GET['lien'])){
+	$cle=$$_GET['lien'];
+
+	$a1=($cle==1)
+	$a2=
+	$a3=
+} 	  -->
