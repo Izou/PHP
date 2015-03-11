@@ -6,18 +6,42 @@
  	<?php include "header_inc.php";?>
  	<?php include "nav_inc.php"; ?>
 
+
  	<section class='content' id='accueil'>
  		<aside>
- 			<h2>Connexion</h2>
- 			<label>Pseudo :</label>
- 			<input type='text' name='nom' id='nom' size='20' maxlength='' placeholder='8 à 16 caractères'>
- 			<label>Login :</label>
- 			<input type='text' name='nom' id='nom' size='20' maxlength='' placeholder='8 à 16 caractères'>
- 			<input type='submit'name='validation' id='validation' value='OK'>
- 			<a href="#">S'inscrire</a>
+ 			<ul class='vertical'>
+ 				<li><a href="services.php?page=1">Service 1</a></li>
+ 				<li><a href="services.php?page=2">Service 2</a></li>
+ 				<li><a href="services.php?page=3">Service 3</a></li>
+ 			</ul>
+
+ 			<?php 
+ 			$page=1;
+ 			if(isset($_GET['page'])){
+ 				$page=$_GET['page'];
+ 			}
+ 			?>
  		</aside>
  		<article>
- 			<p>article accueil</p>
+
+ 			<?php
+ 			$services=array();
+ 			$num1=["Titre 1", "http://lorempixel.com/output/nature-q-g-150-150-5.jpg", "Lorem ipsum..."];
+ 			$num2=["Titre 2", "http://lorempixel.com/output/city-q-g-150-150-1.jpg", "Lorem ipsum..."];
+ 			$num3=["Titre 3", "http://lorempixel.com/output/nightlife-q-g-150-150-8.jpg", "Lorem ipsum..."];
+
+ 			$services=[$num1,$num2,$num3];
+ 			?>
+
+ 			<h2>
+ 			<?php echo $services[$page-1][0];?>
+ 			</h2>
+
+ 			<figure>
+ 			<img src="<?php echo $services[$page-1][1]; ?>">
+ 			</figure>
+
+ 			<p><?php echo $services[$page-1][2]; ?></p>
  		</article>
  	</section>
 

@@ -16,6 +16,12 @@ ul li{
 
 }
 
+ul.vertical li{
+	clear:both;
+	list-style: none;
+	width: 90%;
+}
+
 ul li a{
 	display:block;
 	height: 3em;
@@ -27,6 +33,16 @@ ul li a{
 	border-radius: 15px 15px 0 0;
 	-moz-border-radius: 15px 15px 0 0;
 	-webkit-border-radius: 15px 15px 0 0;
+}
+
+ul.vertical li a{
+	display: inline-block;
+	border-radius:0 0 0 0;
+	-moz-border-radius:0 0 0 0;
+	-webkit-border-radius:0 0 0 0;
+	width: 90%;
+	margin-bottom: 0.5em;
+
 }
 
 ul li a:hover{
@@ -78,6 +94,15 @@ article{
 	width: 65%;
 	height: 30.6em;
 	padding-left: 2em;
+}
+
+h2{
+	text-decoration: underline;
+	font-size: 2em;
+}
+
+img{
+	border-radius:100px 100px 100px 100px;
 }
 
 footer{
